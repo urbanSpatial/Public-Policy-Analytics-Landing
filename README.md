@@ -2,7 +2,7 @@
 
 [Public Policy Analytics](https://urbanspatial.github.io/PublicPolicyAnalytics/) by Ken Steif explores data science as a planning tool to improve public-sector decision making. An introductory book on R, geospatial data science, and machine learning, this book covers several replicable use cases as described below.
 
-The data for this book can be found in the [DATA](https://github.com/urbanSpatial/Public-Policy-Analytics-Landing/DATA) folder on this repo and is organized by chapter. The tables below provide a description of each dataset and the original source when applicable. In many chapters, these datasets are read in directly from their respective open data sites. However, hosting them here allows readers to replicate the analysis even as APIs and sites changes.
+The data for this book can be found in the [DATA](https://github.com/urbanSpatial/Public-Policy-Analytics-Landing/tree/master/DATA) folder on this repo and is organized by chapter. The tables below provide a description of each dataset and the original source when applicable. In many chapters, these datasets are read in directly from their respective open data sites. However, hosting them here allows readers to replicate the analysis even as APIs and sites changes.
 
 ### Chapter 1: Indicators for Transit Oriented Development
 
@@ -75,7 +75,7 @@ Chapter 7 focuses on evaluating people-based algorithms to understand pertinent 
 
 ### Chapter 8: Predicting Rideshare Demand
 
-Chapter 8 return to spatial problem solving to predict space/time demand for ride share in Chicago. While similar to the other geospatial models built in the book so far, this chapter focuses on effects in time adding an additional complexity. 
+Chapter 8 return to spatial problem solving to predict space/time demand for ride share in Chicago. While similar to the other geospatial models built in the book so far, this chapter focuses on effects in time adding an additional complexity.
 
 | Dataset        | Description    | Open Data URL  | File Type | Location |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
