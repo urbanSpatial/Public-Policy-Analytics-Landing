@@ -1,8 +1,8 @@
 # Public Policy Analytics
 
-[Public Policy Analytics](https://urbanspatial.github.io/PublicPolicyAnalytics/) by Ken Steif explores data science as a planning tool to improve public-sector decision making. An introductory book on R, geospatial data science, and machine learning, this book covers several replicable use cases as described below.
+[Public Policy Analytics](https://urbanspatial.github.io/PublicPolicyAnalytics/) is a new book by Ken Steif, Ph.D that teaches at the intersection of data science and public policy. Designed for students studying City Planning and related disciplines, the book teaches both code and context toward improved public-sector decision making. Readers can expect an introduction to R, geospatial data science, and machine learning, coveyed through real world use cases of data science in government.
 
-The data for this book can be found in the [DATA](https://github.com/urbanSpatial/Public-Policy-Analytics-Landing/tree/master/DATA) folder on this repo and is organized by chapter. The tables below provide a description of each dataset and the original source when applicable. In many chapters, these datasets are read in directly from their respective open data sites. However, hosting them here allows readers to replicate the analysis even as APIs and sites changes.
+All of the book's data is free and open source compiled from across the web. Each chapter includes API calls that read data directly into R. However, for posterity, the [DATA](https://github.com/urbanSpatial/Public-Policy-Analytics-Landing/tree/master/DATA) folder on this repo has all the data, organized by chapter. The sections below provide a description of each dataset and the original source, when applicable. 
 
 ### Chapter 1: Indicators for Transit Oriented Development
 
