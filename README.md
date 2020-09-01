@@ -1,12 +1,12 @@
 # Public Policy Analytics
 
-[Public Policy Analytics](https://urbanspatial.github.io/PublicPolicyAnalytics/) is a new book by Ken Steif, Ph.D that teaches at the intersection of data science and public policy. Designed for students studying City Planning and related disciplines, the book teaches both code and context toward improved public-sector decision making. Readers can expect an introduction to R, geospatial data science, and machine learning, coveyed through real world use cases of data science in government.
+[Public Policy Analytics](https://urbanspatial.github.io/PublicPolicyAnalytics/) is a new book by [Ken Steif, Ph.D](https://twitter.com/KenSteif) that teaches at the intersection of data science and public policy. The book is available [online](https://urbanspatial.github.io/PublicPolicyAnalytics/) and eventually, in print. Designed for students studying City Planning and related disciplines, the book teaches both code and context toward improved public-sector decision making. Readers can expect an introduction to R, geospatial data science, and machine learning, coveyed through real world use cases of data science in government.
 
 All of the book's data is free and open source compiled from across the web. Each chapter includes API calls that read data directly into R. However, for posterity, the [DATA](https://github.com/urbanSpatial/Public-Policy-Analytics-Landing/tree/master/DATA) folder on this repo has all the data, organized by chapter. The sections below provide a description of each dataset and the original source, when applicable. 
 
 ### Chapter 1: Indicators for Transit Oriented Development
 
-Chapter 1 is a introduction to indicators and their importance in conveying complex processes to decision makers. Introducing the `tidyverse`, `tidycensus`, and `sf` packages, this chapter analyzes whether Philadelphia renters are willing to pay a premium for transit amenities.
+Following the Introduction, Chapter 1 introduces indicators as an important tool for simplifying and communicating complex processes to non-technical decision makers. Introducing the `tidyverse`, `tidycensus`, and `sf` packages, this chapter analyzes whether Philadelphia renters are willing to pay a premium for transit amenities.
 
 | Dataset        | Description    | Open Data URL  | File Type | Location |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
@@ -15,7 +15,7 @@ Chapter 1 is a introduction to indicators and their importance in conveying comp
 
 ### Chapter 2: Expanding the Urban Growth Boundary
 
-Chapter 2 explores the discontinuous nature of boundaries to understand they impact development. Using the Urban Growth Boundary in Lancaster County, PA as an example, this chapter illustrates how boundaries can be used to promote infill development and curb suburban sprawl.
+Chapter 2 explores the discontinuous nature of boundaries to understand now an Urban Growth Area in Lancaster County, PA affects suburban sprawl. 
 
 | Dataset        | Description    | Open Data URL  | File Type | Location |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
@@ -27,7 +27,7 @@ Chapter 2 explores the discontinuous nature of boundaries to understand they imp
 
 ### Chapters 3 & 4: Intro to Geospatial Machine Learning
 
-Chapters 3 and 4 provide a first look at predictive analytics. Predicting home prices in Boston, MA, Chapter 3 introduces linear regression and goodness of fit metrics to asses the accuracy and generalizability of the predictive model. Chapter 4 builds on the initial analysis to account for the spatial pattern of home sales.
+Chapters 3 and 4 provide a first look at geospatial predictive modeling, forecasting home prices in Boston, MA. Chapter 3 introduces linear regression, goodness of fit metrics and cross-validation, with the goal of assessing model accuracy and generalizability. Chapter 4 builds on the initial analysis to account for the 'spatial process' or pattern of home prices.
 
 | Dataset        | Description    | Open Data URL  | File Type | Location |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
@@ -38,7 +38,7 @@ Chapters 3 and 4 provide a first look at predictive analytics. Predicting home p
 
 ### Chapter 5: Geospatial Risk Modeling - Predictive Policing
 
-Chapter 5 tackles the controversial topic of predictive policing. This chapter introduces the geospatial risk model to predict the risk of burglaries in Chicago, IL and evaluates the risk model by comparing it to the ubiquitous kernel density estimation.
+Chapter 5 tackles the controversial topic of Predictive Policing, forecasting burglary risk in Chicago. The argument is made that converting Broken Windows theory into Broken Window policing, can bake bias directly into a predictive model and lead to a discriminatory resource allocation tool. The concept of generalizability remains key.
 
 | Dataset        | Description    | Open Data URL  | File Type | Location |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
@@ -57,7 +57,7 @@ Chapter 5 tackles the controversial topic of predictive policing. This chapter i
 
 ### Chapter 6: People-Based ML Models
 
-Chapter 6 introduces how data science can be used to identify risk/opportunity for individuals. Teaching how to predict for individuals, Chapter 6 uses the resulting intelligence to develop a cost/benefit analyses for Bounce to Work! a pogo-transit start-up. Particularly the goal is to predict the probability a client will churn (not re-subscribe) for Bounce to Work!'s membership.
+Chapter 6 introduces the use of machine learning estimating risk/opportunity for individuals. The resulting intelligence is then used to develop a cost/benefit analyses for Bounce to Work! a pogo-transit start-up. The goal is to predict the probability a client will 'churn' or not re-up their membership. This is valuable use for public-sector data scientists working with individuals and families. 
 
 | Dataset        | Description    | Open Data URL  | File Type | Location |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
@@ -66,7 +66,7 @@ Chapter 6 introduces how data science can be used to identify risk/opportunity f
 
 ### Chapter 7: People-Based ML Models: Algorithmic Fairness
 
-Chapter 7 focuses on evaluating people-based algorithms to understand pertinent social costs associated with them. Using data published by ProPublica, a model is estimated to predict recidivism and several analytics are created to better judge the fairness of person-based predictive algorithms and the disparate impact they may have.
+Chapter 7 evaluates people-based algorithms for 'disparate impact' - the idea even if an algorithm is not designed to discriminte on its face, it may still have a discriminatory effect. This chapter returns to a criminal justice use case, estimating the _social_ costs and benefits..
 
 | Dataset        | Description    | Open Data URL  | File Type | Location |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
@@ -74,7 +74,7 @@ Chapter 7 focuses on evaluating people-based algorithms to understand pertinent 
 
 ### Chapter 8: Predicting Rideshare Demand
 
-Chapter 8 return to spatial problem solving to predict space/time demand for ride share in Chicago. While similar to the other geospatial models built in the book so far, this chapter focuses on effects in time adding an additional complexity.
+Chapter 8 builds a space/time predictive model of ride share demand in Chicago. New R functionality is introduced along with functions unique to time series data.
 
 | Dataset        | Description    | Open Data URL  | File Type | Location |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
