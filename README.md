@@ -12,7 +12,6 @@ Chapter 1 is a introduction to indicators and their importance in conveying comp
 | :------------- | :------------- | :------------- | :------------- | :------------- |
 | SEPTA_Broad | Stations on the Broad Street line | http://septaopendata-septa.opendata.arcgis.com/datasets/septa-broad-street-line-stations | geojson | DATA/Chapter1/Stations |
 | SEPTA_El | Stations on the Market Frankford (El) line | http://septaopendata-septa.opendata.arcgis.com/datasets/septa-market-frankford-line-stations | geojson | DATA/Chapter1/Stations |
-| philly_CTs | Census Tracts in Philadelphia for 2000 and 2017 <br> including data on population, poverty, median rent, median household income, education levels, and race | Collected with tidycensus | shapefile | DATA/Chapter1/census_data |
 
 ### Chapter 2: Expanding the Urban Growth Boundary
 
