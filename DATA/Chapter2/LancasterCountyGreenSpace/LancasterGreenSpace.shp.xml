@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<metadata xml:lang="en"><Esri><CreaDate>20170613</CreaDate><CreaTime>21233100</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.4\ArcToolbox\Toolboxes\Conversion Tools.tbx\RasterToPolygon" Date="20170613" Time="211721">RasterToPolygon lanc_green C:\Users\kennethsteif\Desktop\spring_2017\theBook\data\zTrash\lancaster_undeveloped_land.shp SIMPLIFY VALUE</Process></lineage></DataProperties></Esri></metadata>

@@ -2,7 +2,7 @@
 
 [Public Policy Analytics](https://urbanspatial.github.io/PublicPolicyAnalytics/) is a new book by [Ken Steif, Ph.D](https://twitter.com/KenSteif) that teaches at the intersection of data science and public policy. The book is available [online](https://urbanspatial.github.io/PublicPolicyAnalytics/) and eventually, in print. Designed for students studying City Planning and related disciplines, the book teaches both code and context toward improved public-sector decision making. Readers can expect an introduction to R, geospatial data science, and machine learning, conveyed through real world use cases of data science in government.
 
-All of the book's data is free and open source, compiled from across the web. Each chapter includes API calls that read data directly into R. However, for posterity, the [DATA](https://github.com/urbanSpatial/Public-Policy-Analytics-Landing/tree/master/DATA) folder on this repo has all the data, organized by chapter. The sections below provide a description of each dataset and the original source, when applicable. 
+All of the book's data is free and open source, compiled from across the web. Each chapter includes API calls that read data directly into R. However, for posterity, the [DATA](https://github.com/urbanSpatial/Public-Policy-Analytics-Landing/tree/master/DATA) folder on this repo has all the data, organized by chapter. The sections below provide a description of each dataset and the original source, when applicable.
 
 ### Chapter 1: Indicators for Transit Oriented Development
 
@@ -10,20 +10,21 @@ Following the Introduction, Chapter 1 introduces indicators as an important tool
 
 | Dataset        | Description    | Open Data URL  | File Type | Location |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
-| SEPTA_Broad | Stations on the Broad Street line | http://septaopendata-septa.opendata.arcgis.com/datasets/septa-broad-street-line-stations | geojson | DATA/Chapter1/Stations |
-| SEPTA_El | Stations on the Market Frankford (El) line | http://septaopendata-septa.opendata.arcgis.com/datasets/septa-market-frankford-line-stations | geojson | DATA/Chapter1/Stations |
+| SEPTA_Broad | Stations on the Broad Street line | http://septaopendata-septa.opendata.arcgis.com/datasets/septa-broad-street-line-stations | geojson | DATA/Chapter1 |
+| SEPTA_El | Stations on the Market Frankford (El) line | http://septaopendata-septa.opendata.arcgis.com/datasets/septa-market-frankford-line-stations | geojson | DATA/Chapter1 |
+| PHL_CT00 | Philadelphia Census Tracts with data on the total population, number of white residents, educational attainment, median household income, median rent, and poverty for the year 2000 | collected with `tidycensus` | geojson | Data/Chapter1 |
 
 ### Chapter 2: Expanding the Urban Growth Boundary
 
-Chapter 2 explores the discontinuous nature of boundaries to understand how an Urban Growth Area in Lancaster County, PA affects suburban sprawl. 
+Chapter 2 explores the discontinuous nature of boundaries to understand how an Urban Growth Area in Lancaster County, PA affects suburban sprawl.
 
 | Dataset        | Description    | Open Data URL  | File Type | Location |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
-| studyAreaTowns | Towns inside of the Lancaster County study area | http://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=1267 | shapefile | DATA/Chapter2/studyAreaTowns |
-| Urban_Growth_Boundary | Lancaster County's Urban Growth Area | http://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=1274 | shapefile | DATA/Chapter2/UGB |
-| LancasterCountyBuildings | Footprints for all buildings in the study area | http://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=1257 | shapefile | DATA/Chapter2/LancasterCountyBuildings |
-| LancasterCountyBoundary | Spatial extent of Lancaster County | http://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=1260 | shapefile | DATA/Chapter2/LancasterCountyBoundary |
-| LancasterGreenSpace | Non-developed land cover in the study area | http://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=3154 | shapefile | DATA/Chapter2/LancasterCountyGreenSpace |
+| studyAreaTowns | Towns inside of the Lancaster County study area | http://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=1267 | geojson | DATA/Chapter2 |
+| Urban_Growth_Boundary | Lancaster County's Urban Growth Area | http://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=1274 | geojson | DATA/Chapter2 |
+| LancasterCountyBuildings | Footprints for a sample of 60% of buildings in the study area | http://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=1257 | geojson | DATA/Chapter2 |
+| LancasterCountyBoundary | Spatial extent of Lancaster County | http://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=1260 | geojson | DATA/Chapter2 |
+| LancasterGreenSpace | Non-developed land cover in the study area | http://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=3154 | geojson | DATA/Chapter2 |
 
 ### Chapters 3 & 4: Intro to Geospatial Machine Learning
 
@@ -57,7 +58,7 @@ Chapter 5 tackles the controversial topic of Predictive Policing, forecasting bu
 
 ### Chapter 6: People-Based ML Models
 
-Chapter 6 introduces the use of machine learning in estimating risk/opportunity for individuals. The resulting intelligence is then used to develop a cost/benefit analysis for Bounce to Work! a pogo-transit start-up. The goal is to predict the probability a client will 'churn' or not re-up their membership. This is valuable for public-sector data scientists working with individuals and families. 
+Chapter 6 introduces the use of machine learning in estimating risk/opportunity for individuals. The resulting intelligence is then used to develop a cost/benefit analysis for Bounce to Work! a pogo-transit start-up. The goal is to predict the probability a client will 'churn' or not re-up their membership. This is valuable for public-sector data scientists working with individuals and families.
 
 | Dataset        | Description    | Open Data URL  | File Type | Location |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
