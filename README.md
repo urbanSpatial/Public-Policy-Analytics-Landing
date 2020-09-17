@@ -12,7 +12,7 @@ Following the Introduction, Chapter 1 introduces indicators as an important tool
 | :------------- | :------------- | :------------- | :------------- | :------------- |
 | SEPTA_Broad | Stations on the Broad Street line | http://septaopendata-septa.opendata.arcgis.com/datasets/septa-broad-street-line-stations | geojson | DATA/Chapter1 |
 | SEPTA_El | Stations on the Market Frankford (El) line | http://septaopendata-septa.opendata.arcgis.com/datasets/septa-market-frankford-line-stations | geojson | DATA/Chapter1 |
-| PHL_CT00 | Philadelphia Census Tracts with data on the total population, number of white residents, educational attainment, median household income, median rent, and poverty for the year 2000 | collected with `tidycensus` | geojson | Data/Chapter1 |
+| PHL_CT00 | Philadelphia Census Tracts with data on the total population, number of white residents, educational attainment, median household income, median rent, and poverty for the year 2000 | collected with `tidycensus` | geojson | DATA/Chapter1 |
 
 ### Chapter 2: Expanding the Urban Growth Boundary
 
