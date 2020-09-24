@@ -43,18 +43,18 @@ Chapter 5 tackles the controversial topic of Predictive Policing, forecasting bu
 
 | Dataset        | Description    | Open Data URL  | File Type | Location |
 | :------------- | :------------- | :------------- | :------------- | :------------- |
-| chicagoBoundary | Boundary of Chicago, IL | https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-City/ewy2-6yfk | shapefile | DATA/Chapter5/Chicago_Boundary |
-| Chicago_Neighborhoods | Neighborhoods in the City of Chicago | https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Neighborhoods/bbvz-uum9 | shapefile | DATA/Chapter5/Chicago_Neighborhoods |
-| Police_Districts | Chicago police districts | https://data.cityofchicago.org/Public-Safety/Boundaries-Police-Districts/4dt9-88ua | shapefile | DATA/Chapter5/Police_Districts |
-| Police_Beats | Chicago police beats | https://data.cityofchicago.org/Public-Safety/Boundaries-Police-Beats-current-/aerh-rz74 | shapefile | DATA/Chapter5/Police_Beats |
-| abandoned_buildings | 311 complaints about abandoned buildings in 2017 | https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Vacant-and-Abandoned-Building/7nii-7srd | shapefile | DATA/Chapter5/abandoned_buildings
-| abandoned_cars | 311 calls on abandoned vehicles in 2017 | https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Abandoned-Vehicles/3c9v-pnva | shapefile | DATA/Chapter5/abandoned_cars
-| graffiti | 311 calls reporting graffiti in 2017 | https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Graffiti-Removal-Historical/hec5-y4x5 | shapefile | DATA/Chapter5/graffiti
-| liquor_retail | Locations of businesses where liquor is sold | https://data.cityofchicago.org/Community-Economic-Development/Business-Licenses-Current-Liquor-and-Public-Places/nrmj-3kcf | shapefile | DATA/Chapter5/liquor_retail
-| sanitation | Sanitation code complaints made to 311 in 2017 |https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Sanitation-Code-Complaints-Hi/me59-5fac | shapefile | DATA/Chapter5/sanitation
-| street_light_outages | 311 calls reporting street light outages in 2017 | https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Street-Lights-All-Out-Histori/zuxi-7xem | shapfile | DATA/Chapter5/
-| burglaries17 | Burglaries that occurred in Chicago in 2017 | https://data.cityofchicago.org/Public-Safety/Crimes-2017/d62x-nvdr | shapefile | DATA/Chapter5/burglaries17
-| burglaries18 | Burglaries that occurred in Chicago in 2018 | https://data.cityofchicago.org/Public-Safety/Crimes-2018/3i3m-jwuy | shapefile | DATA/Chapter5/burglaries18
+| chicagoBoundary | Boundary of Chicago, IL | https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-City/ewy2-6yfk | geojson | DATA/Chapter5 |
+| chicagoNhoods | Neighborhoods in the City of Chicago | https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Neighborhoods/bbvz-uum9 | geojson | DATA/Chapter5 |
+| policeDistricts | Chicago police districts | https://data.cityofchicago.org/Public-Safety/Boundaries-Police-Districts/4dt9-88ua | geojson | DATA/Chapter5 |
+| policeBeats | Chicago police beats | https://data.cityofchicago.org/Public-Safety/Boundaries-Police-Beats-current-/aerh-rz74 | geojson | DATA/Chapter5 |
+| abandonedBuildings | 311 complaints about abandoned buildings in 2017 | https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Vacant-and-Abandoned-Building/7nii-7srd | geojson | DATA/Chapter5
+| abandonedCars | 311 calls on abandoned vehicles in 2017 | https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Abandoned-Vehicles/3c9v-pnva | geojson | DATA/Chapter5
+| graffiti | 311 calls reporting graffiti in 2017 | https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Graffiti-Removal-Historical/hec5-y4x5 | geojson | DATA/Chapter5
+| liquorRetail | Locations of businesses where liquor is sold | https://data.cityofchicago.org/Community-Economic-Development/Business-Licenses-Current-Liquor-and-Public-Places/nrmj-3kcf | geojson | DATA/Chapter5
+| sanitation | Sanitation code complaints made to 311 in 2017 |https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Sanitation-Code-Complaints-Hi/me59-5fac | geojson | DATA/Chapter5
+| streetLightsOut | 311 calls reporting street light outages in 2017 | https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Street-Lights-All-Out-Histori/zuxi-7xem | geojson | DATA/Chapter5
+| burglaries17 | Burglaries that occurred in Chicago in 2017 | https://data.cityofchicago.org/Public-Safety/Crimes-2017/d62x-nvdr | geojson | DATA/Chapter5
+| burglaries18 | Burglaries that occurred in Chicago in 2018 | https://data.cityofchicago.org/Public-Safety/Crimes-2018/3i3m-jwuy | geojson | DATA/Chapter5
 
 ### Chapter 6: People-Based ML Models
 
