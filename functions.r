@@ -51,8 +51,9 @@ qBr <- function(df, variable, rnd) {
     as.character(quantile(round(df[[variable]],0),
                           c(.01,.2,.4,.6,.8), na.rm=T))
   } else if (rnd == FALSE | rnd == F) {
-    as.character(formatC(quantile(df[[variable]]), digits = 3),
-                 c(.01,.2,.4,.6,.8), na.rm=T)
+    as.character(formatC(quantile(df[[variable]],
+                                  c(.01,.2,.4,.6,.8), na.rm=T),
+                         digits = 3))
   }
 }
 
