@@ -113,7 +113,7 @@ multipleRingBuffer <- function(inputPolygon, maxDistance, interval)
       #cast this sf as a polygon geometry type
       thisRing <- st_cast(buffer1_, "POLYGON")
       #take the last column which is 'geometry'
-      thisRing <- as.data.frame(thisRing[,ncol(thisRing)])
+      thisRing <- as.data.frame(st_geometry(thisRing))
       #add a new field, 'distance' so we know how far the distance is for a give ring
       thisRing$distance <- distances[distancesCounter]
     }
@@ -133,7 +133,7 @@ multipleRingBuffer <- function(inputPolygon, maxDistance, interval)
       #cast as apolygon
       thisRing <- st_cast(thisRing, "POLYGON")
       #get the last field
-      thisRing <- as.data.frame(thisRing$geometry)
+      thisRing <- as.data.frame(st_geometry(thisRing))
       #create the distance field
       thisRing$distance <- distances[distancesCounter]
     }
@@ -151,7 +151,7 @@ multipleRingBuffer <- function(inputPolygon, maxDistance, interval)
       #cast as a polygon
       thisRing <- st_cast(thisRing, "POLYGON")
       #geometry column as a data frame
-      thisRing <- as.data.frame(thisRing[,ncol(thisRing)])
+      thisRing <- as.data.frame(st_geometry(thisRing))
       #add teh distance
       thisRing$distance <- distances[distancesCounter]
     }  
