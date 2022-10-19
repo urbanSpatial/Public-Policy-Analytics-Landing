@@ -180,9 +180,11 @@ crossValidate <- function(dataset, id, dependentVariable, indVariables) {
     cat("This hold out fold is", thisFold, "\n")
     
     fold.train <- filter(dataset, dataset[[id]] != thisFold) %>% as.data.frame() %>% 
-      dplyr::select(id, geometry, indVariables, dependentVariable)
+      dplyr::select(id, geometry, all_of(indVariables),
+                    all_of(dependentVariable))
     fold.test  <- filter(dataset, dataset[[id]] == thisFold) %>% as.data.frame() %>% 
-      dplyr::select(id, geometry, indVariables, dependentVariable)
+      dplyr::select(id, geometry, all_of(indVariables),
+                    all_of(dependentVariable))
     
     form_parts <- paste0(dependentVariable, " ~ ", paste0(indVariables, collapse = "+"))
     form <- as.formula(form_parts)
