@@ -184,12 +184,13 @@ crossValidate <- function(dataset, id, dependentVariable, indVariables) {
     fold.test  <- filter(dataset, dataset[[id]] == thisFold) %>% as.data.frame() %>% 
       dplyr::select(id, geometry, indVariables, dependentVariable)
     
-    regression <-
-      glm(countBurglaries ~ ., family = "poisson", 
-          data = fold.train %>% 
-            dplyr::select(-geometry, -id))
+    form_parts <- paste0(dependentVariable, " ~ ", paste0(indVariables, collapse = "+"))
+    form <- as.formula(form_parts)
+    regression <- glm(form, family = "poisson",
+                      data = fold.train %>%
+                        dplyr::select(-geometry, -id))
     
-    thisPrediction <- 
+    thisPrediction <-
       mutate(fold.test, Prediction = predict(regression, fold.test, type = "response"))
     
     allPredictions <-
@@ -198,6 +199,7 @@ crossValidate <- function(dataset, id, dependentVariable, indVariables) {
   }
   return(st_sf(allPredictions))
 }
+
 
 # Iterate Thresholds Chapter 6, 7 (left in Chapters)
 iterateThresholds <- function(data, observedClass, predictedProbs, group) {
